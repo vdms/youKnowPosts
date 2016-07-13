@@ -1,0 +1,15 @@
+{
+  "name": "youknowblog",
+  "version": "1.0.0",
+  "description": "Sistema para facilitar a escrita de posts para o youKnow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youknow",
+    "blog"
+  ],
+  "author": "Vicente Sarmento",
+  "license": "ISC"
+}

@@ -1,0 +1,177 @@
+<style type="text/css">
+	@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+	/* Modificações fora da publicação */
+	.blog-post-container h3 {
+		font-family: 'Raleway', sans-serif;
+		font-size: 28px !important; /* 1 */
+
+		/* O youKnow aplica font-size com mais especificidade. Por isso precisa do !important. */
+	}
+
+	.list-item-separator {
+		margin-top: 32px;
+		margin-bottom: 32px;
+		height: 1px;
+	}
+	/* Fim de modificações fora da publicação */
+
+	.vince-post {
+		color: #333;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		padding-top: 16px;
+	}
+
+	.vince-post > h2 {
+		font-size: 20px !important;
+	}
+
+	.vince-post hr {
+		border: 1px 0 0;
+		margin: 32px 2%;
+	}
+
+	.vince-post p {
+		line-height: 1.5;
+		margin-bottom: 24px;
+		margin-top: 0;
+	}
+
+	.vince-post li {
+		margin-top: 32px;
+	}
+
+	.vince-post ol .title {
+		font-size: 16px !important;
+		margin-top: 0;
+		margin-bottom: 12px;
+	}
+
+
+	.vince-post code {
+		display: block;
+	}
+
+	.vince-post img {
+		display: block;
+		margin: 0;
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.vince-post .code-block {
+		background-color: #f0f0f0;
+		box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+		margin-bottom: 16px;
+		padding: 16px;
+	}
+
+	.vince-post .link {
+		display: inline-block;
+		margin: 0 8px;
+		position: relative;
+	}
+
+	.vince-post .link:before {
+		background-color: #ffcc33;
+		bottom: -1px;
+		content: '';
+		left: -5px;
+		position: absolute;
+		right: -5px;
+		top: -1px;
+		z-index: -1;
+	}
+
+	.vince-post .img-holder {
+		border: 1px solid #dedede;
+		cursor: pointer;
+		display: block;
+		margin: 0 auto 32px;
+		max-width: 500px;
+		padding: 8px;
+		position: relative;
+	}
+
+	.vince-post .legenda {
+		font-size: .75em;
+		font-style: italic;
+		margin: -22px auto 32px;
+		max-width: 500px;
+		text-align: center;
+	}
+
+	.vince-post .img-holder:before,
+	.vince-post .img-holder:after {
+		content: '';
+		left: 0;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		position: absolute;
+		top: 0;
+		-webkit-transition: 300ms;
+		        transition: 300ms;
+	}
+
+	.vince-post .img-holder:before {
+		height: 40px;
+		width: 100%;
+	}
+
+	.vince-post .img-holder:hover:before {
+		background-color: rgba(0, 0, 0, 0.75);
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+
+	.vince-post .img-holder:after {
+		color: #ffffff;
+		content: 'Clique para ver versão ampliada da imagem';
+		font-size: .75em;
+		left: 0;
+		text-align: center;
+		top: 0;
+		-webkit-transform: translateY(100%);
+		    -ms-transform: translateY(100%);
+		        transform: translateY(100%);
+		width: 100%;
+	}
+
+	.vince-post .img-holder:hover:after {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+
+	.vince-post .highlight {
+		background-color: #BDE5F8;
+		border-left: 2px solid #00529B;
+		font-size: .75em;
+		margin-bottom: 32px;
+		margin-top: 16px;
+		padding: 16px;
+	}
+
+	.ident {
+		padding-left: 16px;
+	}
+
+	.ident-2 {
+		padding-left: 32px;
+	}
+</style>
+
+<div class="vince-post">
+	<div class="img-holder">
+		<img src="https://viljamis.com/type-for-ui/img/devices.jpg" />
+	</div>
+    <h1>Mar de telas</h1>
+	<p>A imagem de capa dessa publicação é uma boa representação das inúmeras resoluções, telas, aparelhos que devem ser levadas em consideração ao criarmos <em>sites</em>, aplicativos e, no caso do <a class="link" href="http://www.quicklessons.com">QuickLessons</a>, cursos online.</p>
+    <p>Minha sugestão para ampliar o alcance de seu conteúdo é trabalhar as <a class="link" href="http://tableless.com.br/introducao-sobre-media-queries/" target="_blank"><em>media queries</em></a> de acordo com cada <strong>conteúdo</strong> e não de uma forma mais rígida ou predeterminada, pensando em quebras relacionas a resoluções "padrões" ou a aparelhos, como iPhones ou iPads.</p>
+	<p>Todas essas variações levantam discussões especialmente sobre rolar a página e se devemos ou não considerar uma <a href="https://en.wikipedia.org/wiki/Above_the_fold" class="link">"dobra" da página</a>.</p>
+	<p>Há manifestações como o <a class="link" href="http://thereisnopagefold.com/">There is no Page Fold</a> para uma maior conscientização de que não há "dobras" ou medidas que dêem um norte para projetos para a <em>web</em> por conta dessas inúmeras variações de aparelhos digitais.</p>
+	<p><a class="link" href="http://lukew.com">Luke Wroblewski</a>, uma das maiores referências quanto a responsividade na <em>web</em> <a class="link" href="http://www.lukew.com/ff/entry.asp?1946">já escreveu sobre não existir "dobra"</a>.</p>
+	<p>Em contrapartida, há aqueles que mantém a ideia de que <a class="link" href="https://www.nngroup.com/articles/page-fold-manifesto/">a dobra ainda importa</a>. Segundo <a href="https://www.nngroup.com/articles/author/amy-schade/" class="link">Amy Schade</a>, os usuários somente rolam páginas da internet se o conteúdo que estiver sendo apresentado para eles logo de cara, acima da dobra, for promissor o suficiente.</p>
+	<p>Considerando ou não uma ou mais dobras para cada conteúdo, a verdade é que o aumento contínuo de variações de celulares, monitores, TV's, relógios e o que mais vier, trará mais e mais desafios nós da Affero Lab.</p>
+	<p>Até a próxima.</p>
+</div>
