@@ -11,5 +11,16 @@
     "blog"
   ],
   "author": "Vicente Sarmento",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-debug": "^2.1.2",
+    "gulp-foreach": "^0.1.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-path": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-tap": "^0.1.3"
+  }
 }
