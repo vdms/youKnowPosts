@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .vince-post {
+  /* 1: O youKnow coloca propriedades desnecessárias... */
   color: #333;
   font-family: 'Raleway', sans-serif !important;
   font-size: 16px;
@@ -9,11 +10,18 @@
   .vince-post h3,
   .vince-post p,
   .vince-post a {
-    /* 1: O youKnow coloca float desnecessário... */
     font-family: 'Raleway', sans-serif !important;
     float: none;
     /* 1 */
     line-height: 1.25; }
+  .vince-post h1,
+  .vince-post h2,
+  .vince-post h3 {
+    margin-bottom: .5em;
+    margin-left: 0;
+    /* 1 */
+    margin-right: 0;
+    /* 1 */ }
   .vince-post > h2 {
     font-size: 20px !important; }
   .vince-post hr {
