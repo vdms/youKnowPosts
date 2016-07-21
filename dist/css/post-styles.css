@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .vince-post {
   color: #333;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif !important;
   font-size: 16px;
   padding-top: 16px; }
   .vince-post > h2 {
