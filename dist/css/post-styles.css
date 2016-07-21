@@ -9,7 +9,10 @@
   .vince-post h3,
   .vince-post p,
   .vince-post a {
+    /* 1: O youKnow coloca float desnecessário... */
     font-family: 'Raleway', sans-serif !important;
+    float: none;
+    /* 1 */
     line-height: 1.25; }
   .vince-post > h2 {
     font-size: 20px !important; }

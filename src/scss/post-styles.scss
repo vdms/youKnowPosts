@@ -9,7 +9,9 @@
 	h3,
 	p,
 	a {
+		/* 1: O youKnow coloca float desnecessário... */
 		font-family: 'Raleway', sans-serif !important;
+		float: none; /* 1 */
 		line-height: 1.25;
 	}
 
