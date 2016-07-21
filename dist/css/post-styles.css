@@ -4,6 +4,12 @@
   font-family: 'Raleway', sans-serif !important;
   font-size: 16px;
   padding-top: 16px; }
+  .vince-post h1,
+  .vince-post h2,
+  .vince-post h3,
+  .vince-post p,
+  .vince-post a {
+    font-family: 'Raleway', sans-serif !important; }
   .vince-post > h2 {
     font-size: 20px !important; }
   .vince-post hr {
