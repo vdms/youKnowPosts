@@ -1,4 +1,10 @@
+.page-title {
+  font-family: 'Raleway', sans-serif !important; }
+
 .content .text {
   color: #333;
   font-family: 'Raleway', sans-serif !important;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.5; }
+  .content .text > p:not(:last-of-type) {
+    margin-bottom: 1em; }
