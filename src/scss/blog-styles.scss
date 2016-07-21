@@ -2,10 +2,10 @@
 
 /* Modificações fora da publicação */
 .blog-post-container h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important; /* 1 */
     font-size: 28px !important; /* 1 */
 
-    /* O youKnow aplica font-size com mais especificidade. Por isso precisa do !important. */
+    /* 1: O youKnow aplica font-size com mais especificidade. Por isso precisa do !important. */
 }
 
 .list-item-separator {

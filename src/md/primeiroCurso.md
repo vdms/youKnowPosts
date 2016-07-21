@@ -1,4 +1,4 @@
-# Meu primeiro curso
+# Pondo o QuickLessons à prova
 
 [Em uma publicação](https://youknow.afferolab.com.br/youknow/app/#/seam/viewBlog.seam?cid=271986&personId=857579&blogId=851837&conversationPropagation=none#j_idt130:4:j_idt132) comentei que integro a equipe do QuickLessons e que estamos trabalhando em **profundas mudanças** nele. Aqui trabalhamos com três públicos-alvo: *administradores de contra*, *criadores de conteúdo* e os *usuários que irão consumir o curso exportado*.
 
