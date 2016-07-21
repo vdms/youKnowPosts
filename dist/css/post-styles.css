@@ -86,6 +86,7 @@
   .vince-post .img-holder:hover:after {
     opacity: 1;
     filter: alpha(opacity=100); }
+  .vince-post blockquote,
   .vince-post .highlight {
     background-color: #BDE5F8;
     border-left: 2px solid #00529B;
@@ -93,6 +94,9 @@
     margin-bottom: 32px;
     margin-top: 16px;
     padding: 16px; }
+    .vince-post blockquote > p,
+    .vince-post .highlight > p {
+      margin-bottom: 0; }
   .vince-post .ident {
     padding-left: 16px; }
   .vince-post .ident-2 {
