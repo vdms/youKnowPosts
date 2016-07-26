@@ -30,7 +30,8 @@
   .vince-post p {
     line-height: 1.5;
     margin-bottom: 24px;
-    margin-top: 0; }
+    margin-top: 0;
+    text-align: left; }
   .vince-post li {
     margin-top: 32px; }
   .vince-post ol .title {
