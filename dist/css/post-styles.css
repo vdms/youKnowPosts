@@ -40,6 +40,8 @@
     margin-bottom: 12px; }
   .vince-post code {
     display: block; }
+  .vince-post iframe {
+    margin-bottom: 24px; }
   .vince-post img {
     display: block;
     margin: 0;
