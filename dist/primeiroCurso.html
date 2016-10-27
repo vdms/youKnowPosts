@@ -9,7 +9,77 @@
 </head>
 <body>
     <div class="vince-post">
-        <!-- post content -->
+        <h1 id="pondo-o-quicklessons-prova">Pondo o QuickLessons à prova</h1>
+<p><a href="https://youknow.afferolab.com.br/youknow/app/#/seam/viewBlog.seam?cid=271986&amp;personId=857579&amp;blogId=851837&amp;conversationPropagation=none#j_idt130:4:j_idt132">Em uma publicação</a> comentei que integro a equipe do QuickLessons e que estamos trabalhando em <strong>profundas mudanças</strong> nele. Aqui trabalhamos com três públicos-alvo: <em>administradores de contra</em>, <em>criadores de conteúdo</em> e os <em>usuários que irão consumir o curso exportado</em>.</p>
+<p>Para melhor entender o contexto dos <em>criadores de conteúdo</em>, conversei com a equipe e me ofereci para criar um curso online. Acredito que essa experiência, aliada à entrevistas e observações de uso, ajudará na <strong>identificação de problemas</strong> e <strong>possíveis soluções</strong> a serem cuidados pelo QuickLessons em sua nova versão.</p>
+<p>Como a <em>criação de conteúdo</em> de um curso não faz parte do escopo, utilizarei um conteúdo já existente como base: um folheto da Affero Lab, cujo título é Guia rápido de Desenvolvimento de Conteúdos Light.</p>
+<p>Vale ressaltar que <strong>a maior parte do QuickLessons ainda está antiga</strong>. A principal implicação desse legado está na área de estilos do curso, a qual ainda não foi refeita.</p>
+<p>Isto posto, <strong>mãos à obra</strong>.</p>
+<h2 id="esqueleto">Esqueleto</h2>
+<p>Acredito que devo iniciar a montagem do curso por sua estrutura, para ter a visão geral do curso que será montado. O QuickLessons não oferece uma ajuda ou predefinições para montar um curso. Você deve manualmente criar níveis de acordo com sua necessidade, incluindo introduções, conclusões e exercícios/avaliações.</p>
+<p>Ainda irei consultar DI’s sobre boas práticas, mas na minha cabeça um curso deve ter uma introdução e uma conclusão, além do conteúdo… claro. Dessa forma, a estrutura ficou assim:</p>
+<ul>
+<li>Introdução</li>
+<li>Público-alvo</li>
+<li>Objetivos</li>
+<li>Arquitetura</li>
+<li>Conteúdo</li>
+<li>Objetos de aprendizagem</li>
+<li>Avaliação</li>
+<li>Conclusão</li>
+</ul>
+<blockquote>
+<p>Optei por não incluir exercícios no curso para não ter que <strong>gerar conteúdo</strong>. No futuro, se alguém quiser levar adiante o curso, sinta-se a vontade! Será ótimo ter um curso básico de DI aqui no youKnow.</p>
+</blockquote>
+<p>A estruturação em si foi simples, embora um pouco confusa: por vezes criei um nível como filho (um dentro do outro) e não como irmão (no mesmo nível hierárquico). Tudo rapidamente corrigido com “cliques e arrastes”.</p>
+<p><img src="http://i.imgur.com/Fff0wtA.png" alt="Na imagem, o nível &#39;Avaliação&#39; está erradamente dentro do nível &#39;Objetos de aprendizagem&#39;"></p>
+<blockquote>
+<p>O processo foi um pouco repetitivo e tem margem para aprimoramento. Imaginando que essa estrutura já existe digitada em algum outro canto (Word, PPT, e-mail…), ela poderia ser reaproveitada de alguma forma.</p>
+</blockquote>
+<h2 id="primeiras-telas">Primeiras telas</h2>
+<p>Ao tentar montar a primeira tela, senti a necessidade de impor algumas regras a este experimento, para que eu tenha as limitações mais próximas as dos outros usuários. Dessa forma:</p>
+<ul>
+<li>Somente poderei utilizar as tipografias oferecidas pelo QuickLessons;</li>
+<li>Não poderei utilizar CSS no código fonte das caixas de texto para mudar nenhuma aparência;</li>
+<li>Somente poderei utilizar imagens disponíveis na Internet, uma vez que o QuickLessons visa atender produtores independentes, que muitas vezes não possuem equipe de design;</li>
+</ul>
+<p>Logo de cara, não encontro nenhuma tipografia que realmente me satisfaça. Todas as disponíveis são aquelas opções que vem com os sistemas operacionais: Arial, Times New Roman, Trebuchet etc. De qualquer forma, sigo com a <strong>Georgia</strong>.</p>
+<blockquote>
+<p>Com tantas tipografias <em>open source</em> por aí, como as oferecidas pelo <a href="https://fonts.google.com/">Google Fonts</a>,  o QuickLessons pode/deve se aproveitar de tipografias mais interessantes.</p>
+</blockquote>
+<h2 id="reaproveitamento-de-efeitos">Reaproveitamento de efeitos</h2>
+<p>Efeitos? Sim! O QuickLessons em sua nova versão permitirá o usuário aplicar alguns efeitos em elementos de imagem, texto e vídeo.</p>
+<p>Apliquei em algumas telas esse novo recurso do QuickLessons.</p>
+<p>A partir da segunda vez, vi que não havia indicação na listagem de efeitos uma indicação de que o efeito X ou Y já tinha sido utilizado (seja na última cena ou em qualquer cena). Eu tinha que lembrar qual tinha sido usado…algo nada bacana de acontecer.</p>
+<p>Enquanto aplicava um ou outro efeito, me deu vontade de mesclar efeitos oferecidos.</p>
+<blockquote>
+<p>Fui eu mesmo quem planejou os efeitos e eu mesmo tive vontade de mesclá-los na hora da montagem de um curso. <strong>Nada como testar o projetado</strong>. Se comigo aconteceu isso, é provável que aconteça com usuários reais. Mal posso esperar pelos <em>feedbacks</em> após testar o QuickLessons por aí a fora!</p>
+<p>É possível que parte desses problemas será resolvida na definição do <strong>Estilo do Curso</strong>, onde poderemos definir um efeito padrão a ser aplicado em todo o curso.</p>
+<p>Talvez os estilos oferecidos precisem ser mais flexíveis e intercambiáveis. Um problema vem a minha mente logo de cara ao considerar essa possibilidade: mais opções para o usuário podem reduzir a produtividade dele. Precisaremos testar e validar um bocado informações relativas a esse recurso.</p>
+</blockquote>
+<h2 id="reaproveitamento-de-estilos-de-texto">Reaproveitamento de estilos de texto</h2>
+<p>Ao longo das cenas que criei, quis replicar o <strong>estilo de título</strong> ao longo do curso.</p>
+<p>Por conta da praticidade de produção e para não querer impor aos usuários que toda tela deva ter um título, o QuickLessons não oferece caixas de texto separadas só para títulos. E se não há caixas de textos só para títulos também não há um estilo geral para eles.</p>
+<p>Vi-me avançando e voltando nas cenas para poder reaplicar os mesmos estilos (tamanho da letra e peso, por exemplo).</p>
+<blockquote>
+<p>Acredito que teremos nessa nova versão do QuickLessons a definição de estilos de títulos, tal qual o Word tem (com bem menos opções, certamente).</p>
+</blockquote>
+<h2 id="fim-do-primeiro-tempo">Fim do primeiro tempo</h2>
+<p>Ainda estamos ajustando inúmeros recursos no QuickLessons. A exportação do curso ainda não leva em conta as novidades implementadas e, por isso, ainda não tenho como ir até o final do processo de produção e compartilhar um endereço de curso com vocês.</p>
+<p>No entanto, essa primeira parte da edição de curso já serviu para apontar diversos itens a serem trabalhados por nós.</p>
+<p>Se você puder separar um tempo para colaborar com a equipe QuickLessons, nos avise. Criaremos um <em>login asap</em> para você! =)</p>
+<p>Se você leu até aqui, um muito obrigado!</p>
+<p>Até a próxima.</p>
+<p>///////////////////////
+ Há um folheto que circula na Affero Lab há anos, cujo título é <em>Guia de Desenvolvimento de Conteúdos Light</em>, onde são apresentadas questões básicas para se montar um curso. Enquanto aprendo com o folheto, utilizarei-o como base de meu curso.</p>
+<blockquote>
+<p>O panfleto apresenta conteitos/etapas para a construção do curso: <strong>público-alvo</strong>, <strong>objetivos</strong>, <strong>arquitetura</strong>, <strong>conteúdo</strong>, <strong>objetos de aprendizagem</strong> e <strong>avaliação</strong>. Tentarei segui-lo na hora de relatar minha experiência para facilitar minha vida, ok? :)</p>
+</blockquote>
+<ul>
+<li>Definição de padrões para títulos (incluindo all caps).</li>
+<li>Ajuste de padding e posicionamento do texto na tela.</li>
+</ul>
+
     </div>
 
 </body>
