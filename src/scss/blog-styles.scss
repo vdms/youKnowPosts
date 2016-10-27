@@ -2,8 +2,12 @@
 
 /* Modificações fora da publicação */
 .blog-post-container h3 {
-    font-family: 'Raleway', sans-serif !important; /* 1 */
-    font-size: 28px !important; /* 1 */
+    display: block;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 18px !important; /* 1 */
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5em !important;
+    text-transform: uppercase;
 
     /* 1: O youKnow aplica font-size com mais especificidade. Por isso precisa do !important. */
 }
