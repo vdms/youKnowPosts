@@ -1,0 +1,35 @@
+{
+  "name": "youknowblog",
+  "version": "1.0.0",
+  "description": "Sistema para facilitar a escrita de posts para o youKnow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youknow",
+    "blog"
+  ],
+  "author": "Vicente Sarmento",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "foreach": "^2.0.5",
+    "gulp-clean": "^0.3.2",
+    "gulp-debug": "^2.1.2",
+    "gulp-file-insert": "^1.0.2",
+    "gulp-foreach": "^0.1.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-path": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sequence": "^0.4.5",
+    "gulp-tap": "^0.1.3",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-markdown": "^1.2.0"
+  }
+}

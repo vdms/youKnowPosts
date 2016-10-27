@@ -1,0 +1,18 @@
+Achismo vs. Métricas
+
+Oferecer seu ponto de vista sobre algo pode ser uma das ações mais bacanas em um projeto. Sendo aceito ou não, ele serve para reforçar ou questionar o que está sendo discutido, além abrir novos caminhos.
+
+O produto amadurece e a equipe evolui. É um belo ganha-ganha.
+
+Entretanto, há momentos em que o ponto de vista (por meio dos  "eu acho...",  "eu acredito que...", "na minha experiência...") deve ficar de lado para que as métricas falem mais alto.
+
+Um exemplo claro dessa situação aconteceu aqui no QuickLessons. Estamos em um longo processo de recriar o QL e começamos pela sua menor porção útil: a edição de cena.
+
+Como não poderia ser diferente, um dos primeiros itens a serem trabalhos era a caixa de preenchimento de texto e suas opções.
+
+
+
+Eu acho que...
+
+Pela primeira vez, tenho a oportunidade de refazer um produto.
+
