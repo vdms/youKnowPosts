@@ -7,7 +7,6 @@ Pode-se dividir as regras relacionadas a CSS em dois grandes blocos: as de forma
 A metodologia que utilizamos no QL é a **Bloco, Elemento e Modificador**, comumente conhecida como **BEM**. Ela foi [desenvolvida](https://en.bem.info/) pelo time da Yandex, com o intuito de ajudar os desenvolvedores a entenderem melhor a relação entre HTML e CSS dos projetos.
 
 ## As três partes
-Nessa metodologia constam:
 
 * O **bloco** que é uma abstração em alto nível de um componente. Cada **bloco** deve ser considerado como o elemento pai. Um exemplo é o botão de um site ou aplicação: _.btn { }_
 * Os itens "filhos" do bloco, **elementos**, que devem ser colocados sempre dentro do elemento pai e são indicados por dois _underscores_: _.btn__price { }_. Um bloco pode ter vários elementos e os elementos sempre dependem do bloco.
@@ -38,13 +37,13 @@ E o markup poderia ser algo como:
 
 Veja um exemplo no Codepen abaixo:
 
-<iframe height="200px" width="96%" src="http://codepen.io/vdms/full/mRydYK"></iframe>
+<!-- inserir codepen http://codepen.io/vdms/pen/mRydYK -->
 
 Se outro desenvolvedor tivesse escrito o código acima e eu não fosse muito familiar com o CSS, ainda assim seria possível ter uma boa ideia da responsabilidade de cada classe e de como elas dependem umas das outras.
 
 Essa **separação de responsabilidades**, principalmente no que toca os modificadores, é bastante bacana para evitar replicação de código. Um exemplo pode ser visto abaixo:
 
-### Não utilizando regra alguma (24 linhas)
+### Não utilizando BEM (24 linhas)
 
 ```css
 .btn-default {
