@@ -42,7 +42,63 @@ Veja um exemplo no Codepen abaixo:
 
 Se outro desenvolvedor tivesse escrito o código acima e eu não fosse muito familiar com o CSS, ainda assim seria possível ter uma boa ideia da responsabilidade de cada classe e de como elas dependem umas das outras.
 
-Essa **separação de responsabilidades**, principalmente no que toca os modificadores, é bastante bacana para evitar replicação de código.
+Essa **separação de responsabilidades**, principalmente no que toca os modificadores, é bastante bacana para evitar replicação de código. Um exemplo pode ser visto abaixo:
+
+### Não utilizando regra alguma (24 linhas)
+
+```css
+.btn-default {
+    background-color: #dedede;
+    border: 0px solid transparent;
+    border-radius: .25em;
+    display: inline-block;
+    font-size: 14px;
+    padding: .75em 1.5em;
+}
+
+.btn-success {
+    background-color: #8bc34a;
+    border: 0px solid transparent;
+    border-radius: .25em;
+    display: inline-block;
+    font-size: 14px;
+    padding: .75em 1.5em;
+}
+
+.btn-error {
+    background-color: #e51c53;
+    border: 0px solid transparent;
+    border-radius: .25em;
+    display: inline-block;
+    font-size: 14px;
+    padding: .75em 1.5em;
+}
+```
+
+### Utilizando BEM (14 linhas de código)
+
+```css
+/* Bloco */
+.btn {
+    background-color: #dedede;
+    border: 0px solid transparent;
+    border-radius: .25em;
+    display: inline-block;
+    font-size: 14px;
+    padding: .75em 1.5em;
+}
+
+/* Modificador que atua no estilo do bloco*/
+.btn--success {
+    background-color: #8bc34a;
+}
+
+.btn--error {
+    background-color: #e51c53;
+}
+```
+
+Observação: No HTML usaremos "btn btn--success" ou invés de apenas "btn-success". Não há problema algum em utilizar mais de uma classe em um mesmo elemento.
 
 ## Por que utilizar BEM
 

@@ -31,7 +31,56 @@
 
 </p>
 <p>Se outro desenvolvedor tivesse escrito o código acima e eu não fosse muito familiar com o CSS, ainda assim seria possível ter uma boa ideia da responsabilidade de cada classe e de como elas dependem umas das outras.</p>
-<p>Essa <strong>separação de responsabilidades</strong>, principalmente no que toca os modificadores, é bastante bacana para evitar replicação de código.</p>
+<p>Essa <strong>separação de responsabilidades</strong>, principalmente no que toca os modificadores, é bastante bacana para evitar replicação de código. Um exemplo pode ser visto abaixo:</p>
+<h3 id="n-o-utilizando-regra-alguma-24-linhas-">Não utilizando regra alguma (24 linhas)</h3>
+<pre><code class="lang-css">.btn-default {
+    background-color: #dedede;
+    border: 0px solid transparent;
+    border-radius: .25em;
+    display: inline-block;
+    font-size: 14px;
+    padding: .75em 1.5em;
+}
+
+.btn-success {
+    background-color: #8bc34a;
+    border: 0px solid transparent;
+    border-radius: .25em;
+    display: inline-block;
+    font-size: 14px;
+    padding: .75em 1.5em;
+}
+
+.btn-error {
+    background-color: #e51c53;
+    border: 0px solid transparent;
+    border-radius: .25em;
+    display: inline-block;
+    font-size: 14px;
+    padding: .75em 1.5em;
+}
+</code></pre>
+<h3 id="utilizando-bem-14-linhas-de-c-digo-">Utilizando BEM (14 linhas de código)</h3>
+<pre><code class="lang-css">/* Bloco */
+.btn {
+    background-color: #dedede;
+    border: 0px solid transparent;
+    border-radius: .25em;
+    display: inline-block;
+    font-size: 14px;
+    padding: .75em 1.5em;
+}
+
+/* Modificador que atua no estilo do bloco*/
+.btn--success {
+    background-color: #8bc34a;
+}
+
+.btn--error {
+    background-color: #e51c53;
+}
+</code></pre>
+<p>Observação: No HTML usaremos “btn btn–success” ou invés de apenas “btn-success”. Não há problema algum em utilizar mais de uma classe em um mesmo elemento.</p>
 <h2 id="por-que-utilizar-bem">Por que utilizar BEM</h2>
 <p>Agora que vimos as partes que constam na metodologia, podemos listar algumas possíveis vantagens em usá-la:</p>
 <ul>
