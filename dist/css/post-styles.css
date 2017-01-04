@@ -17,11 +17,9 @@
   .vince-post h1,
   .vince-post h2,
   .vince-post h3 {
-    margin-bottom: .5em;
-    margin-left: 0;
-    /* 1 */
-    margin-right: 0;
-    /* 1 */ }
+    margin-bottom: .5em !important;
+    margin-left: 0 !important;    /* 1 */
+    margin-right: 0 !important;    /* 1 */ }
   .vince-post > h2 {
     font-size: 20px !important; }
   .vince-post hr {
@@ -41,6 +39,9 @@
     font-size: 16px !important;
     margin-top: 0;
     margin-bottom: 12px; }
+  .vince-post pre {
+    margin-bottom: 24px;
+  }
   .vince-post code {
     display: block; }
   .vince-post iframe {
