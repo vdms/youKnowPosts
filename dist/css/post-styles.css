@@ -34,7 +34,7 @@
     text-align: left; }
   .vince-post li {
     margin-top: 32px; }
-  .vince-post li::first-of-type {
+  .vince-post li:first-of-type {
     margin-top: 0;
   }
   .vince-post ol .title {
