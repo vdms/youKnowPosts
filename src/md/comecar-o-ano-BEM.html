@@ -1,0 +1,65 @@
+<h1 id="come-ando-o-ano-bem">Começando o ano BEM</h1>
+<p>Ano passado, o QuickLessons começou a passar por inúmeras e profundas mudanças. Para manter essas novas áreas e componentes organizados, escaláveis e sempre legíveis definimos algumas regras na forma de escrever o CSS.</p>
+<p>Pode-se dividir as regras relacionadas a CSS em dois grandes blocos: as de formatação de código e as de convenção de nomenclatura para seletores. Sobre essas últimas que falarei hoje.</p>
+<p>A metodologia que utilizamos no QL é a <strong>Bloco, Elemento e Modificador</strong>, comumente conhecida como <strong>BEM</strong>. Ela foi <a href="https://en.bem.info/">desenvolvida</a> pelo time da Yandex, com o intuito de ajudar os desenvolvedores a entenderem melhor a relação entre HTML e CSS dos projetos.</p>
+<h2 id="as-tr-s-partes">As três partes</h2>
+<p>Nessa metodologia constam:</p>
+<ul>
+<li>O <strong>bloco</strong> que é uma abstração em alto nível de um componente. Cada <strong>bloco</strong> deve ser considerado como o elemento pai. Um exemplo é o botão de um site ou aplicação: <em>.btn { }</em></li>
+<li>Os itens “filhos” do bloco, <strong>elementos</strong>, que devem ser colocados sempre dentro do elemento pai e são indicados por dois <em>underscores</em>: <em>.btn__price { }</em>. Um bloco pode ter vários elementos e os elementos sempre dependem do bloco.</li>
+<li>Por fim, os <strong>modificadores</strong>, que manipulam o bloco de forma a mudar o tema ou estilo de um componente sem influenciar outros elementos com os quais não possui relação alguma. A indicação de modificadores é feita por meio de dois hifens, após o nome do bloco. Por exemplo: <em>.btn–success { }</em> .</li>
+</ul>
+<p>Juntando as três partes em um código CSS teremos:</p>
+<pre><code class="lang-css">/* Bloco */
+.btn {}
+
+/* Elemento que depende do bloco para existir */
+.btn__price {}
+
+/* Modificador que atua no estilo do bloco*/
+.btn--success {}
+.btn--lg {}
+</code></pre>
+<p>E o markup poderia ser algo como:</p>
+<pre><code class="lang-html">&lt;button class=&quot;btn btn--lg btn--success&quot; onclick=&quot;subscribe()&quot;&gt;
+  &lt;span class=&quot;btn__text&quot;&gt;Assinar por&lt;/span&gt;
+  &lt;span class=&quot;btn__price&quot;&gt;R$15,99&lt;/span&gt;
+&lt;/button&gt;
+</code></pre>
+<p>Veja um exemplo no Codepen abaixo:</p>
+<p>&lt;iframe height=&quot;200px&quot; width=&quot;96%&quot; src=&quot;http://codepen.io/vdms/full/mRydYK&quot;&gt;&lt;/iframe&gt;
+
+</p>
+<p>Se outro desenvolvedor tivesse escrito o código acima e eu não fosse muito familiar com o CSS, ainda assim seria possível ter uma boa ideia da responsabilidade de cada classe e de como elas dependem umas das outras.</p>
+<p>Essa <strong>separação de responsabilidades</strong>, principalmente no que toca os modificadores, é bastante bacana para evitar replicação de código.</p>
+<h2 id="por-que-utilizar-bem">Por que utilizar BEM</h2>
+<p>Agora que vimos as partes que constam na metodologia, podemos listar algumas possíveis vantagens em usá-la:</p>
+<ul>
+<li><p>Se quiser criar um novo estilo de um componente, é fácil ver <strong>todos os modificadores e elementos</strong> que já existem pertencentes àquele bloco. Pode ser que você nem precise escrever mais nenhum CSS porque já existirá um modificador fazendo o que você precisa.</p>
+</li>
+<li><p>Se estivermos lendo o <em>markup</em> ao invés do CSS, poderemos ter uma rápida ideia de <strong>que parte depende de outra</strong> (como vimos no exemplo que .btn__text depende de .btn), ainda que não saibamos o que ele faz.</p>
+</li>
+<li><p>Designers e desenvolvedores podem nomear com consistência os componentes de forma a facilitar a comunicação entre os membros do time. Em outras palavras, BEM auxilia a todos que estão no projeto a estarem sempre na mesma página quanto ao comportamento e estilos de cada bloco da aplicação.</p>
+</li>
+</ul>
+<p>Além disso, <a href="http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces">Harry Roberts</a> acrescenta que isto aumenta a confiança dos designers e desenvolvedores para lidar com códigos antigos e desconhecidos, que geralmente as pessoas não querem mexer com medo de <em>bugar</em> alguma outra área da aplicação, pois não sabem até onde os efeitos daquela modificação chegarão.</p>
+<p>Com mais confiança e clareza, levamos menos tempo para modificar e atualizar os componentes. Ainda que não seja perfeita, ela fornece uma base sólida para escrevermos códigos de fácil manutenção no futuro.</p>
+<h2 id="classes-e-mais-classes">Classes e mais classes</h2>
+<p>A proposta do BEM é utilizar somente classes (sem ID’s, tags ou atributos) como seletores. Isso faz com que <strong>a especificidade dos seletores seja sempre baixa</strong> e plana, o que é <a href="https://css-tricks.com/strategies-keeping-css-specificity-low/">uma boa ideia</a>. Quem mexe com CSS sabe o quanto podemos acabar brigando com a especificidade dos seletores e sim, <strong>!important</strong>, estou de olho em você.</p>
+<h2 id="sem-bem-o-mundo-do-css-est-perdido">Sem BEM, o mundo do CSS está perdido</h2>
+<p>Não! Você pode muito bem escrever bom CSS sem BEM, utilizando outras metodologias à sua escolha, como: <a href="https://smacss.com/">SMACSS</a>, <a href="http://oocss.org/">OOCSS</a>, <a href="https://github.com/inuitcss">INUIT</a> ou criar sua própria regra. O que sugiro é que ao menos tenha diretrizes guiando o trabalho do time para que o código se mantenha coeso e fácil de fazer manutenção.</p>
+<h2 id="para-o-bem-e-avante">Para o BEM e avante</h2>
+<p>A preocupação com a nomenclatura de classes é um de tantos recursos que utilizamos para manter nosso CSS organizado.</p>
+<p>Escrevemos cada componente em seu próprio arquivo e juntamos todos antes de enviar para produção. Eles seguem uma ordem de importação chamada de Triângulo Invertido, ou ITCSS, proposta pelo Harry Roberts. Você pode conferi-la <a href="https://www.youtube.com/watch?v=1OKZOV-iLj4">nesse vídeo</a>.</p>
+<p>Além disso, usamos SCSS ao invés de <em>CSS vanilla</em>, o que nos permite utilizar mixins, variáveis, funções de cor etc, facilitando e flexibilizando o nosso CSS. Em outra publicação apresentarei um pouco do SCSS.</p>
+<p>Se leu até aqui, parabéns e obrigado! Espero que tenha ajudado a entender um pouco sobre a abordagem que escolhemos para nomear nossas classes.</p>
+<p>Até a próxima.</p>
+<h2 id="refer-ncias">Referências</h2>
+<ul>
+<li><a href="https://css-tricks.com/bem-101/">CSS Tricks</a></li>
+<li><a href="https://en.bem.info/">The BEM project website</a></li>
+<li><a href="http://philipwalton.com/articles/side-effects-in-css/">Side effects in CSS</a></li>
+<li><a href="http://philipwalton.com/articles/side-effects-in-css/">Chaining BEM modifiers</a></li>
+<li><a href="http://www.smashingmagazine.com/2012/04/16/a-new-front-end-methodology-bem/">BEM principles</a></li>
+<li><a href="http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces">More transparent UI code with namespaces</a></li>
+</ul>
