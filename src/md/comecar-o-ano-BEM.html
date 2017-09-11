@@ -3,7 +3,6 @@
 <p>Pode-se dividir as regras relacionadas a CSS em dois grandes blocos: as de formatação de código e as de convenção de nomenclatura para seletores. Sobre essas últimas que falarei hoje.</p>
 <p>A metodologia que utilizamos no QL é a <strong>Bloco, Elemento e Modificador</strong>, comumente conhecida como <strong>BEM</strong>. Ela foi <a href="https://en.bem.info/">desenvolvida</a> pelo time da Yandex, com o intuito de ajudar os desenvolvedores a entenderem melhor a relação entre HTML e CSS dos projetos.</p>
 <h2 id="as-tr-s-partes">As três partes</h2>
-<p>Nessa metodologia constam:</p>
 <ul>
 <li>O <strong>bloco</strong> que é uma abstração em alto nível de um componente. Cada <strong>bloco</strong> deve ser considerado como o elemento pai. Um exemplo é o botão de um site ou aplicação: <em>.btn { }</em></li>
 <li>Os itens “filhos” do bloco, <strong>elementos</strong>, que devem ser colocados sempre dentro do elemento pai e são indicados por dois <em>underscores</em>: <em>.btn__price { }</em>. Um bloco pode ter vários elementos e os elementos sempre dependem do bloco.</li>
