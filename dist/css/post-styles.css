@@ -57,7 +57,7 @@
     display: inline-block;
     margin: 0 8px;
     position: relative; }
-  .vince-post a,
+  .vince-post a:before,
   .vince-post .link:before {
     background-color: #ffcc33;
     bottom: -1px;
